@@ -1,15 +1,19 @@
 $(document).ready(function () {
-    $('.nav-search a').on('click', function (e) {
+    $('.search').on('click', function (e) {
         e.preventDefault();
-        $(this).siblings().addClass('active');
-    })
+        $('.search-bar').addClass('active');
+    });
+    $('.search-bar a').on('click', function (e) {
+        e.preventDefault();
+        $('.search-bar').removeClass('active');
+    });
 
-//    $('.banner-slider').slick({
-//        setting - name: setting - value
-//    });
-//        $('.single-item').slick();
-    
-        $('.banner-slider').slick({
-            dots: true,
-        });
+    $('.to-top').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
+
+
 });
