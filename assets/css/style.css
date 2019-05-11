@@ -172,7 +172,7 @@ header .navbar-nav .nav-item:last-child .nav-link {
 @media screen and (min-width: 991px) and (max-width: 1082px){
     header .navbar-nav .nav-link {
         font-size: 13px;
-        padding: 25px 10px !important;
+        padding: 25.5px 10px !important;
     }
 }
 
