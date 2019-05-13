@@ -129,6 +129,7 @@ header .navbar-nav .nav-link {
     position: relative;
     z-index: 999999;
     font-size: 15px;
+    transition: .5s;
 }
 
 header .navbar-nav .nav-item.active .nav-link,
@@ -293,6 +294,7 @@ section.top-news {
 
 section.top-news .single-news {
     position: relative;
+    overflow: hidden;
 }
 
 section.top-news .single-news .text {
@@ -301,6 +303,7 @@ section.top-news .single-news .text {
     width: 80%;
     bottom: 0;
     padding: 20px;
+    overflow: hidden;
 }
 
 section.top-news .single-news .text p {
@@ -380,19 +383,27 @@ section.top-news .single-news .text.red {
     top: 0;
     bottom: inherit;
 }
-section.top-news .single-news .text:hover {
+section.top-news .single-news:hover .text {
     animation: dn .5s ease;
     animation-fill-mode: forwards;
 }
-section.top-news .single-news .text:hover .description p{
+section.top-news .single-news:hover .text h5{
+    color: #fff;
+    transition: .5s;
+}
+section.top-news .single-news:hover .text .description p{
     height: 100%;
     overflow: hidden;
     transition: .5s;
     position: relative;
 }
 @keyframes dn {
+    0%{height: 200px;}
     100% {
+        background: #000;
         border-width: 0px;
+        height: 100%;
+        width: 100%;
     }
 }
 section.top-news .button-show {
@@ -419,7 +430,12 @@ section.top-news .button-show a:hover {
 }
 
 
-
+@media (max-width:768px){
+    section.top-news .button-show a {
+        padding: 5px 30px;
+        font-size: 20px;
+    }
+}
 
 
 
@@ -495,6 +511,7 @@ section.video .single-video .video-thumb::before {
     transform: translate(-50%, -50%);
     z-index: 99;
     transition: .5s;
+    cursor: pointer;
 }
 
 
@@ -672,13 +689,21 @@ section.MoreinIllami .right-content .illami-big-content .content {
     background: rgba(26, 29, 50, .78);
     color: #fff;
     font-family: 'Allerta', sans-serif;
+    transition: .5s;
+}
+section.MoreinIllami .right-content .illami-big-content:hover .content {
+    background: rgba(255,255,255,.7);
+    color: #1a1d32;
 }
 
 section.MoreinIllami .right-content .illami-bottom .content {
     margin-top: 15px;
     background: #fff;
 }
-
+section.MoreinIllami .right-content .illami-bottom .content:hover {
+    background: #1a1d32;
+    transition: .5s;
+}
 section.MoreinIllami .right-content .illami-bottom .content .text {
     padding: 10px;
 }
@@ -686,6 +711,10 @@ section.MoreinIllami .right-content .illami-bottom .content .text {
 section.MoreinIllami .right-content .illami-bottom .content h6 {
     font-size: 13px;
     color: #4d4d4d;
+    transition: .5s;
+}
+section.MoreinIllami .right-content .illami-bottom .content:hover h6{
+    color: #fff;
 }
 
 section.MoreinIllami .right-content .illami-bottom .content p {
@@ -693,6 +722,7 @@ section.MoreinIllami .right-content .illami-bottom .content p {
     color: #939393;
     margin: 0;
     line-height: 14px;
+    transition: .5s;
 }
 
 section.MoreinIllami .right-content .illami-bottom .content p span {
@@ -904,13 +934,21 @@ footer .footer-top .right-content .to-top .text {
     margin: auto;
     width: 90px;
     cursor: pointer;
+    text-align: center;
+    color: #5b5d6c;
+    transition: .5s;
 }
 footer .footer-top .right-content .to-top p {
-    color: #5b5d6c;
     text-align: center;
     font-weight: 600;
 }
 
+footer .footer-top .right-content .to-top .text i {
+    font-size: 50px;
+}
+footer .footer-top .right-content .to-top .text:hover {
+    color: #fff;
+}
 footer .footer-top .right-content .to-top img {
     width: 40px;
     margin: auto;
@@ -921,6 +959,11 @@ footer .footer-top .right-content .to-top img {
 footer .footer-top .right-content .social img {
     width: 30px;
     margin: 0 2px;
+    position: relative;
+    transition: .3s;
+}
+footer .footer-top .right-content .social img:hover {
+    transform: scale(1.2);
 }
 
 footer .footer-top .copyright {
@@ -955,7 +998,13 @@ footer .footer-bottom ul {
 footer .footer-bottom ul li {
     list-style: none;
     padding: 0;
-    line-height: 12px;
+    line-height: 14px;
+    position: relative;
+    transition: .5s;
+    left: 0;
+}
+footer .footer-bottom ul li:hover {
+    left: 7px;
 }
 
 footer .footer-bottom ul li a {
@@ -1068,7 +1117,10 @@ section.post-details .time-details .share a:nth-child(6) {
 section.post-details .time-details .share a:nth-child(7) {
     background: #f78422;
 }
-
+section.post-details .time-details .share a:hover{
+    transition: .5s;
+    background-color: #000;
+}
 section.post-details .time-details .share a img {
     width: 21px;
 }
@@ -1102,6 +1154,7 @@ section.post-details .left-content .news{
 section.post-details .left-content .news .content {
     margin-top: 15px;
     background: #fff;
+    transition: .5s;
 }
 
 section.post-details .left-content .news .content .text {
@@ -1119,6 +1172,13 @@ section.post-details .left-content .news .content p {
     margin: 0;
     line-height: 14px;
 }
+section.post-details .left-content .news .content:hover {
+    background: #1a1d32;
+}
+section.post-details .left-content .news .content:hover h6{
+    color: #fff;
+    transition: .5s;
+}
 
 section.post-details .left-content .news .content p span {
     color: #f88570;
@@ -1132,8 +1192,7 @@ section.post-details .left-content .comment .single-comments {
     border-bottom: 1px solid #c7c7c7;
 }
 section.post-details .left-content .comment .single-comments img{
-    width: 50px !important;
-    height: 50px !important;
+    width: 50px;
     margin-right: 20px;
     border-right: 50%;
 }
