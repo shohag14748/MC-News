@@ -14,6 +14,15 @@ $(document).ready(function () {
         }, 1000);
         return false;
     });
-
+    
+    
+    $('section.top-news .single-news .text').mouseenter(function(){
+        $(this).animate({height: "100%",width: "100%"},'500');
+        $(this).mouseleave(function(){
+            $(this).removeAttr('style');
+        });
+    });
+    
+    
 
 });

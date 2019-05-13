@@ -309,7 +309,6 @@ section.top-news .single-news .text p {
 section.top-news .single-news .text .description p{
     height: 0;
     overflow: hidden;
-    transition: .5s;
 }
 
 
@@ -382,18 +381,18 @@ section.top-news .single-news .text.red {
     bottom: inherit;
 }
 section.top-news .single-news .text:hover {
-    animation: dn .3s ease;
+    animation: dn .5s ease;
     animation-fill-mode: forwards;
 }
 section.top-news .single-news .text:hover .description p{
     height: 100%;
+    overflow: hidden;
+    transition: .5s;
+    position: relative;
 }
 @keyframes dn {
-    0%{height: 300px;}
     100% {
         border-width: 0px;
-        width: 100%;
-        height: 100%;
     }
 }
 section.top-news .button-show {
