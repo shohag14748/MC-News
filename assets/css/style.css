@@ -387,10 +387,6 @@ section.top-news .single-news:hover .text {
     animation: dn .5s ease;
     animation-fill-mode: forwards;
 }
-section.top-news .single-news:hover .text h5{
-    color: #fff;
-    transition: .5s;
-}
 section.top-news .single-news:hover .text .description p{
     height: 100%;
     overflow: hidden;
@@ -400,8 +396,6 @@ section.top-news .single-news:hover .text .description p{
 @keyframes dn {
     0%{height: 200px;}
     100% {
-        background: #000;
-        border-width: 0px;
         height: 100%;
         width: 100%;
     }
@@ -649,7 +643,7 @@ section.MoreinIllami .left-content ul li a{
 
 section.MoreinIllami .left-content ul li img {
     width: 60px;
-    margin-right: 7px
+    margin-right: 7px;
 }
 
 section.MoreinIllami .left-content ul li h6 {
@@ -680,6 +674,7 @@ section.MoreinIllami .left-content ul li:hover{
 
 section.MoreinIllami .right-content .illami-big-content {
     position: relative;
+    overflow: hidden;
 }
 
 section.MoreinIllami .right-content .illami-big-content .content {
@@ -695,17 +690,36 @@ section.MoreinIllami .right-content .illami-big-content:hover .content {
     background: rgba(255,255,255,.7);
     color: #1a1d32;
 }
+section.MoreinIllami .right-content .illami-big-content img{
+    transition: .5s;
+}
+section.MoreinIllami .right-content .illami-big-content:hover img{
+    transform: scale(1.2);
+}
 
 section.MoreinIllami .right-content .illami-bottom .content {
     margin-top: 15px;
     background: #fff;
+    overflow: hidden;
+}
+section.MoreinIllami .right-content .illami-bottom .content .img{
+    overflow: hidden;
 }
 section.MoreinIllami .right-content .illami-bottom .content:hover {
     background: #1a1d32;
     transition: .5s;
 }
+section.MoreinIllami .right-content .illami-bottom .content img{
+    transition: .5s;
+    z-index: -1;
+}
+section.MoreinIllami .right-content .illami-bottom .content:hover img{
+    transform: scale(1.2);
+}
 section.MoreinIllami .right-content .illami-bottom .content .text {
     padding: 10px;
+    position: relative;
+    z-index: 9999;
 }
 
 section.MoreinIllami .right-content .illami-bottom .content h6 {
