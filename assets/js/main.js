@@ -15,13 +15,63 @@ $(document).ready(function () {
         return false;
     });
     
-//    
-//    $('section.top-news .single-news .text').mouseenter(function(){
-//        $(this).animate({height: "100%",width: "100%"},'500');
-//        $(this).mouseleave(function(){
-//            $(this).removeAttr('style');
-//        });
-//    });
+    
+    $('.play-list li:nth-child(1)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        
+        $('.video .single-video:nth-child(1)').addClass('active');
+        $('.video .single-video:nth-child(1)').siblings().removeClass('active');
+        
+        $('.video .single-video video').trigger('pause');
+        $('.video .single-video:nth-child(1) video').trigger('play');
+        
+    });
+    $('.play-list li:nth-child(2)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.video .single-video:nth-child(2)').addClass('active');
+        $('.video .single-video:nth-child(2)').siblings().removeClass('active');
+        
+        $('.video .single-video video').trigger('pause');
+        $('.video .single-video:nth-child(2) video').trigger('play');
+    });
+    $('.play-list li:nth-child(3)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.video .single-video:nth-child(3)').addClass('active');
+        $('.video .single-video:nth-child(3)').siblings().removeClass('active');
+        
+        $('.video .single-video video').trigger('pause');
+        $('.video .single-video:nth-child(3) video').trigger('play');
+    });
+    $('.play-list li:nth-child(4)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.video .single-video:nth-child(4)').addClass('active');
+        $('.video .single-video:nth-child(4)').siblings().removeClass('active');
+        
+        $('.video .single-video video').trigger('pause');
+        $('.video .single-video:nth-child(4) video').trigger('play');
+    });
+    $('.play-list li:nth-child(5)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.video .single-video:nth-child(5)').addClass('active');
+        $('.video .single-video:nth-child(5)').siblings().removeClass('active');
+        
+        $('.video .single-video video').trigger('pause');
+        $('.video .single-video:nth-child(5) video').trigger('play');
+    });
+    $('.play-list li:nth-child(6)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.video .single-video:nth-child(6)').addClass('active');
+        $('.video .single-video:nth-child(6)').siblings().removeClass('active');
+        
+        $('.video .single-video video').trigger('pause');
+        $('.video .single-video:nth-child(6) video').trigger('play');
+    });
     
     
 
