@@ -73,6 +73,40 @@ $(document).ready(function () {
         $('.video .single-video:nth-child(6) video').trigger('play');
     });
     
+    $('.bottom .single-content:nth-child(1)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.top .single-content:nth-child(1)').addClass('active');
+        $('.top .single-content:nth-child(1)').siblings().removeClass('active');
+    });
+    $('.bottom .single-content:nth-child(2)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.top .single-content:nth-child(2)').addClass('active');
+        $('.top .single-content:nth-child(2)').siblings().removeClass('active');
+    });
+    $('.bottom .single-content:nth-child(3)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.top .single-content:nth-child(3)').addClass('active');
+        $('.top .single-content:nth-child(3)').siblings().removeClass('active');
+    });
+    $('.bottom .single-content:nth-child(4)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.top .single-content:nth-child(4)').addClass('active');
+        $('.top .single-content:nth-child(4)').siblings().removeClass('active');
+    });
+    $('.bottom .single-content:nth-child(5)').on('click',function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.top .single-content:nth-child(5)').addClass('active');
+        $('.top .single-content:nth-child(5)').siblings().removeClass('active');
+    });
+    
+    
+    
+    
     
 
 });
