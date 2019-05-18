@@ -586,74 +586,74 @@ section.video .play-list ul li:hover .img::before {
 
 
 
-section.MoreinIllami {
+.MoreinIllami {
     background: #f4f4f4;
     padding-bottom: 20px;
 }
 
-section.MoreinIllami .left-content {
+.MoreinIllami .left-content {
     background: #1a1d32;
     height: 100%;
 }
 
-section.MoreinIllami .left-content h4 {
+.MoreinIllami .left-content h4 {
     background: #868991;
     padding: 10px;
     margin: 0;
     color: #fff;
 }
 
-section.MoreinIllami .left-content ul li {
+.MoreinIllami .left-content ul li {
     list-style: none;
     padding: 15px;
     transition: .5s;
 }
 
-section.MoreinIllami .left-content ul li a {
+.MoreinIllami .left-content ul li a {
     display: flex;
     align-items: flex-start;
 
 }
 
-section.MoreinIllami .left-content ul li img {
+.MoreinIllami .left-content ul li img {
     width: 60px;
     margin-right: 7px;
 }
 
-section.MoreinIllami .left-content ul li h6 {
+.MoreinIllami .left-content ul li h6 {
     font-size: 14px;
     color: #fff;
     margin-bottom: 0;
 }
 
-section.MoreinIllami .left-content ul li p {
+.MoreinIllami .left-content ul li p {
     color: #7d7f8a;
     font-size: 13px;
     margin: 0;
 }
 
-section.MoreinIllami .left-content ul li:nth-child(even) {
+.MoreinIllami .left-content ul li:nth-child(even) {
     background: #131525;
 }
 
-section.MoreinIllami .left-content ul li:nth-child(odd) {
+.MoreinIllami .left-content ul li:nth-child(odd) {
     background: #1a1d32;
 }
 
-section.MoreinIllami .left-content ul li:hover h6 {
+.MoreinIllami .left-content ul li:hover h6 {
     color: #555;
 }
 
-section.MoreinIllami .left-content ul li:hover {
+.MoreinIllami .left-content ul li:hover {
     background: #f4f4f4;
 }
 
-section.MoreinIllami .right-content .illami-big-content {
+.MoreinIllami .right-content .illami-big-content {
     position: relative;
     overflow: hidden;
 }
 
-section.MoreinIllami .right-content .illami-big-content .content {
+.MoreinIllami .right-content .illami-big-content .content {
     position: absolute;
     bottom: 0;
     padding: 20px;
@@ -663,60 +663,62 @@ section.MoreinIllami .right-content .illami-big-content .content {
     transition: .5s;
 }
 
-section.MoreinIllami .right-content .illami-big-content:hover .content {
+.MoreinIllami .right-content .illami-big-content:hover .content {
     background: rgba(255, 255, 255, .7);
     color: #1a1d32;
 }
 
-section.MoreinIllami .right-content .illami-big-content img {
+.MoreinIllami .right-content .illami-big-content img {
     transition: .5s;
 }
 
-section.MoreinIllami .right-content .illami-big-content:hover img {
+.MoreinIllami .right-content .illami-big-content:hover img {
     transform: scale(1.2);
 }
 
-section.MoreinIllami .right-content .illami-bottom .content {
+.MoreinIllami .right-content .illami-bottom .content {
     margin-top: 15px;
     background: #fff;
     overflow: hidden;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content .img {
+.MoreinIllami .right-content .illami-bottom .content .img {
     overflow: hidden;
+    position: relative;
+    z-index: 9999999;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content:hover {
+.MoreinIllami .right-content .illami-bottom .content:hover {
     background: #1a1d32;
     transition: .5s;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content img {
+.MoreinIllami .right-content .illami-bottom .content img {
     transition: .5s;
     z-index: -1;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content:hover img {
+.MoreinIllami .right-content .illami-bottom .content:hover img {
     transform: scale(1.2);
 }
 
-section.MoreinIllami .right-content .illami-bottom .content .text {
+.MoreinIllami .right-content .illami-bottom .content .text {
     padding: 10px;
     position: relative;
     z-index: 9999;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content h6 {
+.MoreinIllami .right-content .illami-bottom .content h6 {
     font-size: 13px;
     color: #4d4d4d;
     transition: .5s;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content:hover h6 {
+.MoreinIllami .right-content .illami-bottom .content:hover h6 {
     color: #fff;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content p {
+.MoreinIllami .right-content .illami-bottom .content p {
     font-size: 12px;
     color: #939393;
     margin: 0;
@@ -724,7 +726,7 @@ section.MoreinIllami .right-content .illami-bottom .content p {
     transition: .5s;
 }
 
-section.MoreinIllami .right-content .illami-bottom .content p span {
+.MoreinIllami .right-content .illami-bottom .content p span {
     color: #f88570;
     margin-top: 10px;
     display: block;
